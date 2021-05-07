@@ -1,0 +1,11 @@
+to run ganache cli
+ganache-cli -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"
+
+this runs it on port: 127.0.0.1:8545
+
+
+npm install truffle@5.0.1 -g //installing correct version of truffle. 
+
+Test A - registering users, setting operational modifiers, multi-sig party signatures 
+Test B - Entrancy guards, safeWithdraw send money, timeout functions
+Test C - upgrade smart contracts
