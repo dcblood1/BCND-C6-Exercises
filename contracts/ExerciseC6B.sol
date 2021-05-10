@@ -49,4 +49,3 @@ contract ExerciseC6B {
 
     
 }
-
