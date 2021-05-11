@@ -1,5 +1,6 @@
 pragma solidity ^0.4.25;
 
+
 // It's important to avoid vulnerabilities due to numeric overflow bugs
 // OpenZeppelin's SafeMath library, when used correctly, protects agains such bugs
 // More info: https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2018/november/smart-contract-insecurity-bad-arithmetic/
@@ -13,6 +14,8 @@ contract ExerciseC6C {
     /********************************************************************************************/
     /*                                       DATA VARIABLES                                     */
     /********************************************************************************************/
+
+    mapping(address => uint256) authorizedContracts;
 
     struct Profile {
         string id;
@@ -58,6 +61,21 @@ contract ExerciseC6C {
     {
         require(msg.sender == contractOwner, "Caller is not contract owner");
         _;
+    }
+
+        modifier isCallerAuthorized()
+    {
+        require(authorizedContracts[msg.sender] == 1, "Caller is not authorized");
+        _;
+    }
+
+    //enable other contracts to call function, and authorize them
+    function authorizedContract(address dataContract) external requireContractOwner {
+        authorizedContracts[dataContract] = 1;
+    }
+
+    function deauthorizedContract(address dataContract) external requireContractOwner {
+        delete authorizedContracts[dataContract];
     }
 
     /********************************************************************************************/

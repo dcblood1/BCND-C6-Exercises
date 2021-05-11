@@ -76,6 +76,6 @@ contract ExerciseC6C {
                                 uint256 sales,
                                 uint256 bonus
                             )
-                            external; //
+                            external; //being called externally by C6C
 
 }

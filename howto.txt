@@ -1,5 +1,5 @@
 to run ganache cli
-ganache-cli -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"
+ganache-cli -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat" //then I think I did -l 999999999
 
 this runs it on port: 127.0.0.1:8545
 

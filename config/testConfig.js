@@ -2,7 +2,7 @@
 var ExerciseC6A = artifacts.require("ExerciseC6A");
 var ExerciseC6B = artifacts.require("ExerciseC6B");
 var ExerciseC6C = artifacts.require("ExerciseC6C");
-var ExerciseC6CApp = artifacts.require("ExerciseC6CApp.sol");
+var ExerciseC6CApp = artifacts.require("ExerciseC6CApp");
 
 
 var Config = async function(accounts) {
