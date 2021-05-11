@@ -92,13 +92,13 @@ contract ExerciseC6D {
                             payable
     {
         // CODE EXERCISE 1: Require registration fee
-        /* Enter code here */
+        require(msg.value >= REGISTRATION_FEE);
 
         // CODE EXERCISE 1: Generate three random indexes (range 0-9) using generateIndexes for the calling oracle
-        /* Enter code here */
+        uint8[3] memory indexes = generateIndexes(msg.sender);
 
         // CODE EXERCISE 1: Assign the indexes to the oracle and save to the contract state
-        /* Enter code here */
+        oracles[msg.sender] = indexes;
     }
 
     function getOracle

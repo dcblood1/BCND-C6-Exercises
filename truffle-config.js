@@ -1,6 +1,7 @@
 var HDWalletProvider = require("truffle-hdwallet-provider");
 var mnemonic = "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat";
-
+//ganache-cli -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat" --gasLimit 99999999 --gasPrice 20000000000 -a 50
+//a-50 is 50 accounts
 module.exports = {
   networks: {
     development: {
