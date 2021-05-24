@@ -8,6 +8,11 @@
 # registering users.
 # changing operational status with multi-party sig
 
+# CB is Safe Withdraw function,
+# and rateLimit and Entrancy protections.
+# rate limiting controls the frequency at which a contract operation can be called.
+# entrancy protection wont someone call a contract multiple times w/o letting it complete.
+
 To install, download or clone the repo, then move to the required exercise branch with either:
 
 - `git checkout ExerciseC6A`
