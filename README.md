@@ -1,5 +1,9 @@
 ## Blockchain Course 6 Exercises
 
+# C6A is about 
+# registering users.
+# changing operational status with multi-party sig
+
 To install, download or clone the repo, then move to the required exercise branch with either:
 
 - `git checkout ExerciseC6A`
