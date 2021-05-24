@@ -52,7 +52,7 @@ contract ExerciseC6B {
          _;
      }
 
-    // this prevents bad players from calling your function multiple times without letting it completel
+    // this prevents bad players from calling your function multiple times without letting it complete
     // typically for people who found a bug and want to drain accounts with a loop of transactions
     // essentially it might loop through the whole thing, but then at the end, it will fail, killing the whole transaction
      uint256 private counter = 1;
@@ -78,7 +78,7 @@ contract ExerciseC6B {
 
         //effects
         uint256 amount = sales[msg.sender]; //set local var to amount
-        sales[msg.sender] = sales[msg.sender].sub(amount); //subtract sales amount usign safemath
+        sales[msg.sender] = sales[msg.sender].sub(amount); //subtract sales amount using safemath
         
         //interaction
         msg.sender.transfer(amount); //send that money
