@@ -1,5 +1,9 @@
 ## Blockchain Course 6 Exercises
 
+
+## timestamp is in miliseconds in javascript
+## solidity - timestamp is seconds. have to convert.
+
 # C6A is about 
 # registering users.
 # changing operational status with multi-party sig
@@ -48,3 +52,4 @@ This code was created with the following versions of tools:
 * Ensure you have at least the versions of the tools specified above
 * Delete node_modules folder and run "npm install" to refresh dependencies
 * If you get compiler errors, change the "pragma" line in all .sol files to match your version
+
