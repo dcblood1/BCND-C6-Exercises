@@ -10,22 +10,22 @@ contract('ExerciseC6A', async (accounts) => {
 
   it('contract owner can register new user', async () => {
     
-    // ARRANGE
+    // ARRANGE - inputs
     let caller = accounts[0]; // This should be config.owner or accounts[0] for registering a new user
     let newUser = config.testAddresses[0];  //test addresses are random, acconts[i] are associated with ganache
 
-    // ACT
+    // ACT- function
     await config.exerciseC6A.registerUser(newUser, false, {from: caller});
     let result = await config.exerciseC6A.isUserRegistered.call(newUser); 
 
-    // ASSERT
+    // ASSERT - outputs
     assert.equal(result, true, "Contract owner cannot register new user");
 
   });
 
   it('function call is made when multi-party threshold is reached', async () => {
     
-    // ARRANGE
+    // ARRANGE - inputs, accounts, register users, set current status
     let admin1 = accounts[1]; //accounts are associated with ganache, 
     let admin2 = accounts[2];
     let admin3 = accounts[3];

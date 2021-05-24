@@ -82,7 +82,7 @@ contract ExerciseC6A {
                             view
                             returns(bool)
     {
-        require(account != address(0), "'account' must be a valid address.");
+        require(account != address(0), "'account' must be a valid address."); //make sure account address is not 0
         return userProfiles[account].isRegistered;
     }
 

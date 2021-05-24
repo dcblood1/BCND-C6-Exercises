@@ -5,3 +5,6 @@ this runs it on port: 127.0.0.1:8545
 
 
 npm install truffle@5.0.1 -g //installing correct version of truffle. 
+
+#a is about registering users.
+# changing operational status with multi-party sig
