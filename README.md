@@ -1,5 +1,10 @@
 ## Blockchain Course 6 Exercises
 
+## C6C is about separating data and logic. app vs smart contract.
+## authorize other contracts to call funcitons in that contract
+## contract code: register employee, getBonus, updateEmployee, enables contracts to call functions inside it.
+## app contract code: calculate bonus, add sale -> this calls updateEmployee, in constructor takes a datacontract.
+
 To install, download or clone the repo, then move to the required exercise branch with either:
 
 - `git checkout ExerciseC6A`

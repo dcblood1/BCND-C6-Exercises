@@ -25,7 +25,7 @@ contract('ExerciseC6C', async (accounts) => {
     let bonus = await config.exerciseC6C.getEmployeeBonus.call(employee.id);
 
     // ASSERT
-    assert.equal(bonus.toNumber(), expectedBonus, "Calculated bonus is incorrect incorrect");
+    assert.equal(bonus.toNumber(), expectedBonus, "Calculated bonus is incorrect");
 
   });
 
